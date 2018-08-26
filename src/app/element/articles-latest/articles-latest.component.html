@@ -1,0 +1,10 @@
+<div class="m-articles-latest">
+  <h2 class="h1">最新资讯</h2>
+  <table *ngIf="!this.loading">
+    <tr *ngFor="let article of articles">
+      <td><a routerLink="">{{article.articleTitle}}</a></td>
+      <td width="100"><a routerLink="">{{article.publishedDate.getDate()}}.{{article.publishedDate.getMonth()+1}}.{{article.publishedDate.getFullYear()}}</a></td>
+    </tr>
+  </table>
+  <loading *ngIf="this.loading"></loading>
+</div>

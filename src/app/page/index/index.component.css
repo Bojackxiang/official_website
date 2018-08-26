@@ -1,0 +1,974 @@
+/* ========================== initialization =================*/
+.col-sm-6 {
+  padding: 0;
+}
+
+.special-red {
+  color: #b22222;
+}
+
+.grey-background {
+  background-color: #e7e7e8;
+}
+
+.row {
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 0;
+}
+
+.col-xs-6 {
+  padding: 0;
+}
+
+.clear {
+  clear: both;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+/* ========================= outside wrap =====================*/
+.wrap {
+  width: 100%;
+}
+
+/* ====================== huge image ================= */
+.title-image-content {
+  width: 100%;
+  min-width: 960px;
+}
+
+ngx-slick {
+  overflow: hidden;
+}
+
+.m-slide-clickable {
+  color: transparent !important;
+  outline: none !important;
+}
+
+/* ====================== all section (title+body) ================ */
+.section {
+  min-width: 960px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+}
+
+.section-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px;
+}
+
+.section-title {
+  width: 180px;
+  margin: 50px auto 50px auto;
+  height: 70px;
+}
+
+.section-body {
+  padding-top: 20px;
+}
+
+/* ====================== all section title ========== */
+.section-title-small-title {
+  font-size: 20px;
+  position: relative;
+  left: 0px;
+  font-weight: bold;
+  color: #818285;
+}
+
+.section-title-slash {
+  height: 50px;
+  position: relative;
+  left: 30px;
+  top: -35px;
+}
+
+.section-title-large-title {
+  padding: 0;
+  font-size: 42px;
+  position: relative;
+  left: 50px;
+  top: -65px;
+  font-family: FZDaBiaoSong-B06T;
+  font-weight: bold;
+  letter-spacing: 10px;
+  width: 230px;
+}
+
+/* ====================== slogan part ================ */
+.slogan-title-up {
+  margin-top: 20px;
+  padding: 0;
+  width: 170px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.slogan-text {
+  font-size: 12px;
+  width: 400px;
+  margin-top: 20px;
+}
+
+.slogan-list-title {
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.slogan-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-left: 15px;
+  list-style-type: square;
+}
+
+.slogan-list-item {
+  font-size: 12px;
+  padding-top: 5px;
+}
+
+.slogan-image {
+  width: 100%;
+}
+
+.slogan-title-down {
+  margin: 0;
+  padding: 0;
+  text-indent: 30px;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.slogan-down-red {
+  color: #b22222;
+}
+
+/* ====================== 留学计划  ================ */
+.study-plan-item {
+  background-color: white;
+  padding-bottom: 10px;
+
+}
+
+.study-plan-image {
+  width: 100%;
+}
+
+.study-plan-item-title {
+  text-align: center;
+  font-weight: bold;
+  font-family: "STHeiti";
+}
+
+.study-play-intro-block {
+  width: 100%;
+  margin-left: 20px;
+
+}
+
+.study-plan-item-info {
+  font-size: 12px;
+  letter-spacing: 0;
+  margin: 5px;
+}
+
+.study-plan-item-more-info {
+  width: 100%;
+  text-align: right;
+  padding-right: 30px;
+  padding-top: 20px;
+  font-size: 12px;
+  color: #b22222;
+  font-weight: bold;
+}
+
+/* ====================== 移民专业 ================ */
+.major-item-icon {
+  padding: 0;
+  text-align: center;
+}
+
+.major-item-content {
+  padding: 0;
+}
+
+.major-item-title {
+  margin: 0;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 20px;
+  padding-bottom: 5px;
+}
+
+.major-item-descriptions {
+  margin: 0;
+  padding: 0;
+  font-size: 12px;
+  padding-left: 18px;
+}
+
+.major-more-info {
+  font-size: 12px;
+  text-align: right;
+  padding-right: 20px;
+
+  padding-top: 20px;
+  color: #b22222;
+  font-weight: bold;
+}
+
+.majors-mobile-display {
+  display: none;
+}
+
+/* ====================== 最新资讯 ================ */
+.newest-event-list-container {
+  background-color: white;
+}
+
+.newest-event-title {
+  padding: 20px 0 0 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #b22222;
+  font-weight: bold;
+}
+
+.news-events-list-item {
+  padding-left: 20px;
+  font-size: 12px;
+  border-bottom: 1px solid black;
+  padding-top: 6px;
+  padding-bottom: 2px;
+}
+
+.news-events-list-link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.news-events-list-date {
+  display: inline-block;
+  float: right;
+}
+
+.news-events-more {
+  width: 100%;
+  text-align: right;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+.news-events-more-link {
+  text-decoration: none;
+  cursor: pointer;
+  color: #b22222;
+}
+
+.event-roll {
+  display: table;
+  width: 100%;
+}
+
+.event-roll-button {
+  width: 33.33333%;
+  border: none;
+  border-radius: 0;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: white;
+  cursor: pointer;
+  outline: none;
+}
+
+.event-roll-list {
+  padding-top: 15px;
+  background-color: white;
+  padding-bottom: 15px;
+}
+
+.news-list-item {
+  font-size: 12px;
+  padding-left: 20px;
+  width: 99.99%;
+}
+
+.event-roll-button:active {
+  background-color: #b22222;
+  color: white;
+}
+
+.event-roll-button:hover {
+  background-color: #b22222;
+  color: white;
+}
+
+.event-roll-button:focus {
+  background-color: #b22222;
+  color: white;
+}
+
+.news-mobile-display {
+  display: none;
+}
+
+/* ====================== 升学转学 ================ */
+.trans-content-wrap {
+  margin: 0;
+}
+
+.trans-menu {
+  border: 1px solid lightgrey;
+  padding: 0;
+  text-align: center;
+}
+
+.trans-menu-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0px;
+}
+
+.trans-menu-button {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.trans-menu-item {
+  font-size: 14px;
+  list-style-type: none;
+  padding: 19px 10px;
+  font-weight: bold;
+  display: block;
+}
+
+.trans-menu-button:active {
+  background-color: #b22222;
+  color: white;
+}
+
+.trans-menu-button:hover {
+  background-color: #b22222;
+  color: white;
+}
+
+.trans-menu-button:focus {
+  background-color: #b22222;
+  color: white;
+}
+
+.trans-menu-button:focus {
+  background-color: pink;
+}
+
+.trans-border {
+  border-bottom: 1px solid lightgray;
+}
+
+.trans-slide {
+  background-size: cover;
+  padding: 0;
+}
+
+.trans-slide-content {
+  font-size: 12px;
+  text-align: center;
+  background-color: #b22222;
+  width: 300px;
+  letter-spacing: -1px;
+  color: white;
+  padding-right: 20px;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  margin-left: 340px;
+}
+
+.trans-slide-content-title {
+  font-size: 20px;
+  font-weight: bold;
+  padding-top: 30px;
+}
+
+.trans-slide-content-paragraph {
+  font-weight: bold;
+  padding-top: 10px;
+  margin: 0;
+  line-height: 25px;
+}
+
+.trans-slide-content-button {
+  display: block;
+  margin: 10px auto 0 auto;
+  padding: 7px 15px 5px 15px;
+  width: 100px;
+  border: 1px white solid;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+/* ====================== 名校录 ================ */
+.school-left-container {
+  padding: 0;
+  width: 470px;
+}
+
+.school-item-image {
+  height: 213px;
+  background-image: url("../../../assets/images/school-show.png");
+  background-size: cover;
+}
+
+.school-show-item {
+  height: 213px;
+  background-color: white;
+}
+
+.school-item-title {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-top: 15px;
+  margin: 0;
+}
+
+.school-item-description {
+  font-size: 12px;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  letter-spacing: -1px;
+}
+
+.school-item-more-info {
+  font-size: 12px;
+  color: #b22222;
+  width: 100%;
+  text-align: right;
+  padding-right: 20px;
+}
+
+.school-part-lower {
+  margin-top: 20px;
+}
+
+.school-right-container {
+  padding: 0;
+  width: 470px;
+  margin-left: 20px;
+}
+
+/* ====================== 我们的团队 ================ */
+.team-item-container {
+  padding: 0 21px 0 0;
+  background-color: white;
+}
+
+.team-item {
+  background-color: white;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.team-title {
+  margin: 10px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.team-tel {
+  margin: 0;
+  padding-top: 20px;
+  font-size: 12px;
+}
+
+.team-email {
+  margin: 0;
+  padding-top: 5px;
+  font-size: 12px;
+}
+
+.team-email-icon {
+  color: #b22222;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.our-team-image {
+  width: 100%;
+}
+
+.our-team-small-title{
+  left: -20px;
+}
+
+/* ====================== footer ================ */
+.footer {
+  background-color: #282828;
+  padding: 50px 0px;
+  min-width: 960px;
+}
+
+.footer-image-container {
+  padding: 0;
+}
+
+.footer-image {
+  width: 45%;
+}
+
+.footer-introduction {
+  font-size: 12px;
+  letter-spacing: 1px;
+  line-height: 14px;
+  color: #b5b6b6;
+  margin: 0 auto;
+}
+
+.footer-location {
+  padding: 0 0 0 35px;
+  border-right: 1px solid #b5b6b6;
+}
+
+.footer-title {
+  font-size: 14px;
+  letter-spacing: 1px;
+  margin-bottom: 0;
+  margin-top: 3px;
+  color: white;
+  width: 150px;
+}
+
+.footer-content {
+  margin-bottom: 0;
+}
+
+.footer-content-pc div:not(:first-child) {
+  margin-top: 30px;
+}
+
+.footer-title:not(:first-child) {
+  padding-top: 30px;
+}
+
+.footer-content-pc {
+  font-size: 12px;
+  margin: 0 auto;
+  letter-spacing: 0px;
+  color: #b5b6b6;
+  width: 960px;
+  padding-bottom: 20px;
+}
+
+.footer-tel-container {
+  border-right: 1px solid #b5b6b6;
+  padding-left: 30px;
+}
+
+.footer-email-container {
+  padding-left: 20px;
+}
+
+.footer-mobile {
+  display: none;
+}
+
+/*================================== Modeble version code =================================*/
+
+@media screen and (max-width: 768px) {
+  .title-adjustment {
+    margin-left: 10px;
+  }
+
+  /* ================ title picture ============== */
+  .title-image-content {
+    width: 10%;
+    min-width: 100%;
+  }
+
+  /* ================ section ============== */
+  .section {
+    min-width: 100%;
+  }
+
+  .section-container {
+    width: 85%;
+  }
+
+  .section-body {
+    margin-top: 0;
+  }
+
+  .section-title {
+    margin: 15px 35px;
+    margin: 0 auto;
+  }
+
+  .section-title-small-title {
+    font-size: 14px;
+    width: 50px;
+  }
+
+  .section-title-large-title {
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 10px;
+    width: 220px;
+  }
+
+  /* ================ slogan ============== */
+  .slogan-image {
+    display: none;
+  }
+
+  .slogan-title-up {
+    display: none;
+  }
+
+  .slogan-title-down {
+    display: none;
+  }
+
+  .slogan-mobile {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .slogan-text {
+    color: #58585a;
+    margin: 10px auto 0 auto;
+    width: 100%;
+  }
+
+  .slogan-list {
+    text-align: center;
+    list-style: none;
+    padding: 20px;
+  }
+
+  .slogan-list-group {
+    margin-top: 20px;
+    border: 1px solid #d1d2d4;
+    border-radius: 10px;
+    padding: 10px 10px 15px 10px;
+
+  }
+
+  .slogan-list-title {
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+
+  /* ================ 留学规划 ============== */
+  .study-plan-item-container {
+    text-align: center;
+  }
+
+  .study-plan-item-container:not(:first-child) {
+    margin-top: 30px;
+  }
+
+  .study-plan-image {
+    height: 150px;
+  }
+
+  .study-plan-item {
+    width: 297.25px;
+    margin: 0 auto;
+  }
+
+  .study-play-intro-block {
+    width: 100%;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+  .study-plan-item-info-dot {
+    display: none;
+  }
+
+  .study-plan-item-info {
+    width: 120px;
+    display: inline-block;
+  }
+
+  .study-plan-item-more-info {
+    text-align: right;
+    padding-top: 10px;
+    margin: 0;
+  }
+
+  .study-plan-item-more-info-mobile {
+    padding: 2px 15px;
+    background-color: #b22222;
+    border-radius: 10px;
+    color: white;
+  }
+
+  /* ================ 留学专业 ============== */
+  .majors-mobile-display {
+    display: block;
+    width: 310px;
+    margin: 0px auto;
+  }
+
+  .major-container {
+    width: 100%;
+  }
+
+  .content-items {
+    display: none;
+  }
+
+  .majors-mobile-display-item {
+    border: 1px lightgrey solid;
+    border-radius: 20px;
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px 10px 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+  }
+
+  .majors-mobile-display-item-title {
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 5px;
+  }
+
+  .majors-mobile-display-item:first-child {
+    margin-left: 5px;
+  }
+
+  .majors-mobile-display-item:nth-child(4) {
+    margin-left: 5px;
+  }
+
+  .majors-mobile-button {
+    margin-top: 16px;
+    font-size: 16px;
+    color: white;
+    background-color: #b22222;
+    text-align: center;
+    padding: 8px;
+  }
+
+  /* ================ 最新资讯 ============== */
+  .newest-event-list-container {
+    display: none;
+  }
+
+  .event-roll-list-container {
+    display: none;
+  }
+
+  .news-mobile-display {
+    display: block;
+    padding: 0;
+  }
+
+  .event-roll-button {
+    margin-bottom: 0;
+    display: inline-block;
+    width: 25%;
+    border: none;
+    border-radius: 0;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+    background-color: white;
+    cursor: pointer;
+    outline: none;
+  }
+
+  .news-events-list-date {
+    padding-right: 20px;
+  }
+
+  /* ================ 升学转学 ============== */
+  .trans-content-wrap {
+    display: none;
+  }
+
+  .trans-content-wrap-mobile {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .trans-mobile-button-list {
+    font-size: 15px;
+    font-weight: bold;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .trans-mobile-button-list-item {
+    padding: 15px 50px;
+    background-color: white;
+    color: black;
+    border-top: 1px solid #a7a9ac;
+    border-right: 1px solid #a7a9ac;
+    border-left: 1px solid #a7a9ac;
+  }
+
+  .trans-mobile-button-list:last-child {
+    border-bottom: 1px solid #a7a9ac;
+  }
+
+  .trans-mobile-button-list-item:hover {
+    background-color: #b22222;
+    color: white;
+    border-bottom: 1px solid white;
+  }
+
+  .trans-mobile-button-list-item-content {
+    display: none;
+    background-color: #b22222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+
+  }
+
+  .trans-mobile-button-list-item-content-description {
+    font-size: 12px;
+  }
+
+  /* ================ 名校录 ============== */
+  .school-left-container {
+    width: 100%;
+  }
+
+  .school-right-container {
+    margin-left: 0;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .school-item {
+    overflow: hidden;
+  }
+
+  .school-item-title {
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 8px;
+  }
+
+  .school-item-image {
+    height: 150px;
+  }
+
+  .school-show-item {
+    height: 150px;
+    padding: 0;
+  }
+
+  .school-item-description {
+    font-size: 9px;
+    margin-bottom: 0;
+    padding: 0 7px;
+  }
+
+  .school-item-more-info {
+    font-size: 8px;
+    margin-top: 5px;
+  }
+
+  .school-more-info {
+    font-size: 9px;
+    background-color: #b22222;
+    color: white;
+    padding: 2px 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+
+  /* ================== out team ==================*/
+  .our-team-image {
+    width: 100%;
+  }
+
+  /* ================== footer ==================*/
+  .footer {
+    display: none;
+  }
+
+  .footer-mobile {
+    display: block;
+  }
+
+  .footer-content-mobile {
+    font-size: 12px;
+    background-color: #404041;
+    text-align: center;
+  }
+
+  .footer-content-item {
+    margin: 0;
+    display: inline-block;
+    color: white;
+    padding: 10px;
+  }
+}
+
+/*================================== divider =================================*/
+
+.item {
+  padding: 15px 50px;
+  background-color: white;
+  color: black;
+  border-top: 1px solid #a7a9ac;
+  border-right: 1px solid #a7a9ac;
+  border-left: 1px solid #a7a9ac;
+}
+
+.item:hover {
+  background-color: #b22222;
+  color: white;
+  border-bottom: 1px solid white;
+}
+
+.item:hover + .content {
+  height: 150px;
+  display: block;
+  font-size: 12px;
+  background-color: #b22222;
+  color: white;
+}
+
+.content {
+  font-size: 0px;
+  height: 0;
+  transition: height 0.5s;
+}
+
+.text {
+  padding: 0;
+  margin: 0;
+}
+

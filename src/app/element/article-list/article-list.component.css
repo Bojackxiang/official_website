@@ -1,0 +1,45 @@
+.section {
+    margin-bottom: 16px;
+}
+
+.m-breadcrumb {
+    font-size: 12px;
+    margin-top: 16px;
+}
+
+.article-list-wrapper {
+    background-color: #fafafa;
+}
+
+.article-item {
+    padding: 8px 12px;
+    border-bottom: 1px dashed #aaa;
+    cursor: pointer;
+}
+
+.article-item:hover {
+    -webkit-transition: .3s ease-in-out;
+    -moz-transition: .3s ease-in-out;
+    -ms-transition: .3s ease-in-out;
+    -o-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    background-color: #eee;
+}
+
+.article-item:hover h4 {
+    color: #454647;
+}
+
+.article-item .excerpt {
+    color: #aaa;
+    font-size: 12px;
+}
+
+.article-item .date {
+    color: #666;
+    font-size: 14px;
+}
+
+.article-pagination a {
+    font-size: 12px;
+}

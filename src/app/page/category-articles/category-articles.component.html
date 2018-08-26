@@ -1,0 +1,8 @@
+<div class="content-wrapper">
+    <article-list 
+        *ngIf="catArticles" 
+        [page]="page" [size]="size" [articles]="catArticles" [category]="category" 
+        (isPrevClicked)="onPrevClicked()" (isNextClicked)="onNextClicked()">
+    </article-list>
+</div>
+<loading *ngIf="loading"></loading>

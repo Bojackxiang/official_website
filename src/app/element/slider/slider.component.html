@@ -1,0 +1,9 @@
+<div class="m-slider">
+  <div class="m-slider-img-ul">
+    <div *ngFor="let slide of slides" [style.width]="cssSlideWidth">
+      <a href="{{slide.slideClickUrl}}" [style.background-image]="slide.cssBackgroundImage">
+      </a>
+    </div>
+  </div>
+  <loading *ngIf="this.loading"></loading>
+</div>

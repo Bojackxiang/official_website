@@ -1,0 +1,158 @@
+<header [class.active]="menuStatus">
+  <div class="container">
+    <div class="row flex-container">
+      <div class="col-md-2">
+        <div class="m-logo">
+          <a [routerLink]="['/']"><img src="/assets/images/logo_austop_edu.png"></a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="input-group m-search">
+          <input type="text" class="form-control" placeholder="澳洲八大, 澳洲留学签证, 升学转学, HSC无忧托管, 移民加分, ...">
+          <span class="input-group-btn">
+            <a class="btn btn-brand btn-search"><i class="fa fa-search"></i> 搜索</a>
+          </span>
+        </div>
+      </div>
+      <div class="col-md-4">
+          <div class="m-slogan">
+            选择Aus<span class="special-red">T</span>op, 您就选择了<span class="special-red">安心!</span>
+          </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="m-top-nav-placeholder" *ngIf="menuStatus"></div>
+<div class="m-top-nav">
+  <ul class="m-main-menu" [class.active]="menuStatus">
+    <li>
+      <a routerLink="/" (click)="onClickMenuItem()">首页</a>
+    </li>
+    <li>
+      <a routerLink="/{{setting.ROUTE_ABROAD}}" (click)="onClickMenuItem()">澳洲留学规划
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a routerLink="/{{setting.ROUTE_ABROAD}}/{{setting.ARTICLE_ABROAD_1}}">致家长</a>
+        </li>
+        <li>
+          <a>中小学留学</a>
+        </li>
+        <li>
+          <a>预科/大一进阶留学</a>
+        </li>
+        <li>
+          <a>本科留学</a>
+        </li>
+        <li>
+          <a>硕博留学</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a (click)="onClickMenuItem()">澳洲名校录
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a>中小学总览</a>
+        </li>
+        <li>
+          <a>预科(Fundation)学校总览</a>
+        </li>
+        <li>
+          <a>大一进阶(Deploma)学校总览</a>
+        </li>
+        <li>
+          <a>澳洲大学总览</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a (click)="onClickMenuItem()">境内升学转学
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a>中小学转学</a>
+        </li>
+        <li>
+          <a>HSC 无忧托管计划</a>
+        </li>
+        <li>
+          <a>Pathway 直通课程</a>
+        </li>
+        <li>
+          <a>本升硕</a>
+        </li>
+        <li>
+          <a>Show Cause</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a (click)="onClickMenuItem()">移民加分课程
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a>Professional Year 职业年</a>
+        </li>
+        <li>
+          <a>NAATI 翻译课程</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a (click)="onClickMenuItem()">精英补习
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a>中小学课程补习</a>
+        </li>
+        <li>
+          <a>HSC 补习</a>
+        </li>
+        <li>
+          <a>AEAS 补习</a>
+        </li>
+        <li>
+          <a>大学课程补习</a>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <a (click)="onClickMenuItem()">关于我们
+        <span class="tri"></span>
+      </a>
+      <ul class="m-sub-menu a-left">
+        <li>
+          <a>环澳教育简介</a>
+        </li>
+        <li>
+          <a>环澳教育英才部</a>
+        </li>
+        <li>
+          <a>环澳教育高校部</a>
+        </li>
+        <li>
+          <a>联系我们</a>
+        </li>
+        <li>
+          <a>环澳集团简介</a>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+<div class="m-top-nav-fixed">
+  <div class="m-menu-icon" (click)="switchMenu()" [class.active]="menuStatus">
+    <div class="bar1 icon-bar"></div>
+    <div class="bar2 icon-bar"></div>
+    <div class="bar3 icon-bar"></div>
+  </div>
+</div>

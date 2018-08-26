@@ -1,0 +1,27 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-9">
+            <div class="m-breadcrumb section">
+                <a class="m-link a-brand" [routerLink]="['/']"><i class="fa fa-home"></i> 首页</a>&nbsp;/
+                <span>{{category}}</span>
+            </div>
+            <div class="section">
+                <h4 class="a-brand a-bold">文章类别: {{category}}</h4>
+            </div>
+            <div class="article-list-wrapper section">
+                <div class="article-item" *ngFor="let article of articles" (click)="onClickArticle(article)">
+                    <h4 class="a-brand">{{article.title}}</h4>
+                    <p class="excerpt">{{article.excerpt}}</p>
+                    <p class="date">发布于 {{article.createdAt | date: 'HH:mm dd MMM yyyy'}}</p>
+                </div>
+            </div>
+            <div class="article-pagination section a-right" *ngIf="articles && articles.length > 0 && !(page === 1 && size > articles.length)">
+                <a class="m-link a-brand" *ngIf="page > 1" (click)="onClickPrevPage()">&lt; 上一页&nbsp;</a>
+                <a class="m-link a-brand" *ngIf="articles && articles.length > 0" (click)="onClickNextPage()">&nbsp;下一页 &gt;</a>
+            </div>
+        </div>
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>

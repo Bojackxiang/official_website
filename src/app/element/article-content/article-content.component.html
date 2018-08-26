@@ -1,0 +1,47 @@
+<div class="container m-article-wrapper">
+  <div class="row" *ngIf="article">
+    <div class="col-md-9">
+      <div class="m-breadcrumb">
+        <a class="m-link a-brand" [routerLink]="['/']"><i class="fa fa-home"></i> 首页</a>&nbsp;/
+        <span *ngFor="let bread of breadcrumb">
+          <a class="a-brand" *ngIf="bread.href">{{bread.rel}}</a>
+          <span *ngIf="!bread.href">{{bread.rel}}</span>
+        </span>
+      </div>
+      <div class="title-wrapper margin-bottom">
+        <h3 class="m-title" *ngIf="article.title">{{article.title}}</h3>
+        <p class="m-title-date">创建时间: {{article.createdAt | date: 'HH:mm dd MMM yyyy'}}</p>
+      </div><!-- /.title-wrapper -->
+      <div class="content-wrapper">
+        <div class="excerpt margin-bottom" *ngIf="article.excerpt">
+          <h4 class="m-excerpt-title">*导读</h4>
+          <p class="m-excerpt">{{article.excerpt}}</p>
+        </div>
+        <div class="featured-image margin-bottom" *ngIf="article.featureImgUrl">
+          <img src="{{article.featureImgUrl}}">
+        </div>
+        <div [innerHtml]="article.contentHtml"></div>
+      </div><!-- /.content-wrapper -->
+    </div><!-- /.col-md-9 -->
+    <div class="col-md-3">
+      <div class="sidebar-right">
+        <div class="category-wrapper">
+          <h4 class="m-title">文章类别</h4>
+          <div *ngIf="article">
+            <p class="m-category" *ngFor="let cat of article.categories">
+              <a class="m-link" [routerLink]="['/articles/category/' + cat.categoryName]">{{cat.categoryName}}</a>
+            </p>
+          </div>
+        </div>
+        <div class="recommendation-wrapper">
+          <h4 class="m-title">推荐阅读</h4> 
+        </div>
+        <div class="contact-form-wrapper">
+          <h4 class="m-title">快速咨询</h4>
+        </div>
+      </div>
+    </div><!-- /.col-md-3 -->
+  </div><!-- /.row -->
+</div><!-- /.container -->
+
+<loading *ngIf="loading"></loading>

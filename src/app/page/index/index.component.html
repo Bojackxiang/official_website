@@ -1,0 +1,411 @@
+<!--big picture  -->
+
+<div *ngIf="slider && sliderConfig">
+  <ngx-slick class="carousel" #slickModal="slick-modal" [config]="sliderConfig">
+    <div ngxSlickItem class="slide" *ngFor="let slide of slider.slides">
+      <a class="m-link m-slide-clickable" target="_blank" href="{{slide.clickUrl}}">
+        <img src="{{slide.imageUrl}}" alt="{{slide.title}}" width="100%">
+      </a>
+    </div>
+  </ngx-slick>
+</div>
+
+<!--sections -->
+<div class="wrap">
+  <!-- ==================== slogan part ====================== -->
+  <div class="section slogan">
+    <div class="section-container">
+      <div class="section-title">
+        <p class="section-title-small-title">关于</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">環澳教育</p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-6">
+              <img class="slogan-image" src="/assets/images/slagon.jpg" alt="">
+            </div>
+            <div class="col-xs-12 col-sm-6">
+              <p class="slogan-title-up">用心做留学</p>
+              <p class="slogan-title-down">只为你
+                <span class="slogan-down-red">坐享其成</span>
+              </p>
+              <p class="slogan-mobile">选择Aus
+                <span class="special-red">T</span>op, 您就选择了
+                <span class="special-red">安心！</span>
+              </p>
+              <p class="slogan-text">
+                澳大利亚的中学教育享誉全球，其中学教育由州一级政府负责监管。澳洲中学 分公立中学和私立中学。新州初中教学始于7年级， 11年级和12年级的课程
+                ，大体相当于中国的高中，以面向大学升学为主，学生可以自由选择专业课。 在12年级结业后通过澳洲本地高考可进入澳洲大学就读本科。11年级和12年
+                级的课程，大体相当于中国的高中，以面向大学升学为主，学生可以自由选择 专业课。在12年级结业后通过澳洲本地高考可进入澳洲大学就读本科。
+              </p>
+              <div class="slogan-list-group">
+                <p class="slogan-list-title"> 我们的优势</p>
+                <ul class="slogan-list">
+                  <li class="slogan-list-item">澳州成留学界老大学位紧缺！Pathway课程快速直达名校！</li>
+                  <li class="slogan-list-item">澳州成留学界老大学位紧缺！Pathway课程快速直达名校！</li>
+                  <li class="slogan-list-item">澳州成留学界老大学位紧缺！Pathway课程快速直达名校！</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== 留学规划 ====================== -->
+  <div class="section grey-background plans">
+    <div class="section-container">
+      <!--标题-->
+      <div class="section-title">
+        <p class="section-title-small-title">关于</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">留學規劃</p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-xs-12 study-plan-item-container"
+                 *ngFor="let itemlist of studyPlan; let i = index;">
+              <div class="study-plan-item">
+                <img src="{{itemlist[2]}}" class="study-plan-image">
+                <h4 class="study-plan-item-title">{{itemlist[0]}}</h4>
+                <div class="study-play-intro-block">
+                  <p class="study-plan-item-info" *ngFor="let info of itemlist[1]">
+                    <span class="study-plan-item-info-dot">•</span> {{info}}</p>
+                </div>
+                <p class="study-plan-item-more-info">
+                  <span class="study-plan-item-more-info-mobile pointer">了解更多 >></span>
+                </p>
+                <div class="clear"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== 移民专业 ====================== -->
+  <div class="section immigration">
+    <div class="section-container">
+      <!--标题-->
+      <div class="section-title">
+        <p class="section-title-small-title">热门</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">移民專業</p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <!-- =================== 移民专业 pc device ====================== -->
+          <div class="row content-items">
+            <div class="col-xs-6">
+              <div class="container-fluid">
+                <!--item1-->
+                <div class="row major-item">
+                  <div class="col-xs-3 major-item-icon">
+                    <img src="/assets/images/Icon-01.jpg" height="80" width="80">
+                  </div>
+                  <div class="col-xs-9 major-item-content">
+                    <p class="major-item-title">会计</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-more-info pointer">了解更多 >></p>
+                  </div>
+                </div>
+                <!--item2-->
+                <div class="row major-item">
+                  <div class="col-xs-3 major-item-icon">
+                    <img src="/assets/images/Icon-01.jpg" height="80" width="80">
+                  </div>
+                  <div class="col-xs-9 major-item-content">
+                    <p class="major-item-title">会计</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-more-info pointer">了解更多 >></p>
+                  </div>
+                </div>
+                <!--item3-->
+                <div class="row major-item">
+                  <div class="col-xs-3 major-item-icon">
+                    <img src="/assets/images/Icon-01.jpg" height="80" width="80">
+                  </div>
+                  <div class="col-xs-9 major-item-content">
+                    <p class="major-item-title">会计</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-more-info pointer">了解更多 >></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 major-left-col">
+              <div class="container-fluid major-column">
+                <div class="row major-item">
+                  <div class="col-xs-3 major-item-icon">
+                    <img src="/assets/images/Icon-01.jpg" height="80" width="80">
+                  </div>
+                  <div class="col-xs-9 major-item-content">
+                    <p class="major-item-title">会计</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-more-info pointer">了解更多 >></p>
+                  </div>
+                </div>
+
+                <div class="row major-item">
+                  <div class="col-xs-3 major-item-icon">
+                    <img src="/assets/images/Icon-01.jpg" height="80" width="80">
+                  </div>
+                  <div class="col-xs-9 major-item-content">
+                    <p class="major-item-title">会计</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-item-descriptions">澳州成留学界老大学位紧缺!Pathway课程快速直达名校!</p>
+                    <p class="major-more-info pointer">了解更多 >></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- =================== 移民专业 mobile device ====================== -->
+          <div class="majors-mobile-display">
+            <div class="majors-mobile-display-items">
+              <div class="majors-mobile-display-item" *ngFor="let major of majors ">
+                <img src='{{major[2]}}' width="50">
+                <p class="majors-mobile-display-item-title">{{major[0]}}</p>
+              </div>
+            </div>
+          </div>
+          <div class="majors-mobile-button pointer">
+            了解更多
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ==================== 最新资讯 ====================== -->
+  <div class="section grey-background news">
+    <div class="section-container">
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <!--pc version-->
+          <div class="row">
+            <div class="col-sm-8 newest-event-list-container">
+              <p class="newest-event-title">
+                最新资讯
+              </p>
+              <p class="news-events-list-item" *ngFor="let item of newsEventList">
+                <a class="news-events-list-link" routerLink="/{{item.title}}/{{item.code}}">
+                  {{item.title}}
+                  <span class="news-events-list-date">{{item.createdAt | date:"MM/dd/yy"}}</span>
+                </a>
+              </p>
+              <p class="news-events-more">
+                <a class="news-events-more-link pointer" [routerLink]="['/articles/category/教育最新资讯']">了解更多 &gt;&gt;</a>
+              </p>
+            </div>
+            <div class="col-sm-4 event-roll-list-container">
+              <div class="event-roll ">
+                <button class="event-roll-button" (click)="switchNews(button1)" #button1>最新资讯</button>
+                <button class="event-roll-button" (click)="switchNews(button2)" #button2>成功案例</button>
+                <button class="event-roll-button" (click)="switchNews(button3)" #button3>精彩回顾</button>
+              </div>
+              <div class="event-roll-list">
+                <p class="news-list-item" *ngFor="let info of newsCaseList">{{info}}</p>
+              </div>
+            </div>
+          </div>
+          <!--mobile version-->
+          <div class="row news-mobile-display">
+            <div class="">
+              <div class="event-roll">
+                <p class="event-roll-button">最新资讯</p>
+                <p class="event-roll-button">成功案列</p>
+                <p class="event-roll-button">精彩回顾</p>
+                <p class="event-roll-button">精彩回顾</p>
+              </div>
+              <div class="event-roll-list">
+                <p class="news-list-item" *ngFor="let info of newsEventList">
+                  {{info.title}}
+                  <span class="news-events-list-date">{{info.date}}</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 升学转学 ====================== -->
+  <div class="section transfer">
+    <div class="section-container">
+      <!--标题-->
+      <div class="section-title">
+        <p class="section-title-small-title">境内</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">
+          <b>升學轉學</b>
+        </p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <div class="row trans-content-wrap">
+            <div class="col-xs-4 trans-menu">
+              <div class="trans-menu-button" *ngFor="let item of transMenu">
+                <div class="trans-menu-item trans-border" (click)="transButton(item)">
+                  {{item}}
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-8 trans-slide" [ngStyle]="{ background: 'url(' + transImageSrc + ')'}">
+              <div class="trans-slide-content">
+                <p class="trans-slide-content-title">PATHWAY桥梁课程</p>
+                <p class="trans-slide-content-paragraph">{{transTextContent1}}</p>
+                <p class="trans-slide-content-paragraph">{{transTextContent2}}</p>
+                <a href="#" class="trans-slide-content-button pointer">了解更多</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="row ">
+            <div class="col-xs-12 trans-content-wrap-mobile">
+              <ul class="trans-mobile-button-list" *ngFor="let listItem of transButtonMobile">
+                <li class="trans-mobile-button-list-item" (mouseleave)="hideToggle(refListItem)"
+                    (mouseenter)="showToggle(refListItem)">
+                  {{listItem[0]}}
+                </li>
+                <div class="trans-mobile-button-list-item-content" #refListItem>
+                  <p class="trans-mobile-button-list-item-content-description">
+                    {{listItem[1]}}
+                  </p>
+                </div>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 名校录 ====================== -->
+  <div class="section grey-background schools">
+    <div class="section-container">
+      <!--标题-->
+      <div class="section-title">
+        <p class="section-title-small-title">澳洲</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">
+          <b>名校录</b>
+        </p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-xs-12 col-sm-6 school-left-container">
+              <div class="container-fluid">
+                <div class="row school-item">
+                  <div class="col-sm-5 col-xs-5 school-item-image"></div>
+                  <div class="col-sm-7 col-xs-7 school-show-item">
+                    <p class="school-item-title">中学介绍</p>
+                    <p class="school-item-description">澳大利亚的中学教育享誉全球，其中学教育由 州一级政府负责监管。澳洲中学分公立中学和 私立中学。新州初中教学始于7年级， 11年级
+                      和12年级的课程，大体相当于中国的高中，以 面向大学升学为主，学生可以自由选择专业课
+                      。在12年级结业后通过澳洲本地高考可进入澳 洲大学就读本科。</p>
+                    <p class="school-item-more-info">
+                      <span class="school-more-info pointer">了解更多 >></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid ">
+                <div class="row school-part-lower school-item">
+                  <div class="col-sm-5 col-xs-5 school-item-image"></div>
+                  <div class="col-sm-7 col-xs-7 school-show-item">
+                    <p class="school-item-title">中学介绍</p>
+                    <p class="school-item-description">澳大利亚的中学教育享誉全球，其中学教育由 州一级政府负责监管。澳洲中学分公立中学和 私立中学。新州初中教学始于7年级， 11年级
+                      和12年级的课程，大体相当于中国的高中，以 面向大学升学为主，学生可以自由选择专业课
+                      。在12年级结业后通过澳洲本地高考可进入澳 洲大学就读本科。</p>
+                    <p class="school-item-more-info">
+                      <span class="school-more-info pointer">了解更多 >></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 school-right-container">
+              <div class="container-fluid ">
+                <div class="row school-item">
+                  <div class="col-sm-5 col-xs-5 school-item-image"></div>
+                  <div class="col-sm-7 col-xs-7 school-show-item">
+                    <p class="school-item-title">中学介绍</p>
+                    <p class="school-item-description">澳大利亚的中学教育享誉全球，其中学教育由 州一级政府负责监管。澳洲中学分公立中学和 私立中学。新州初中教学始于7年级， 11年级
+                      和12年级的课程，大体相当于中国的高中，以 面向大学升学为主，学生可以自由选择专业课
+                      。在12年级结业后通过澳洲本地高考可进入澳 洲大学就读本科。</p>
+                    <p class="school-item-more-info">
+                      <span class="school-more-info pointer">了解更多 >></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="container-fluid">
+                <div class="row school-part-lower school-item">
+                  <div class="col-sm-5 col-xs-5 school-item-image"></div>
+                  <div class="col-sm-7 col-xs-7 school-show-item">
+                    <p class="school-item-title">中学介绍</p>
+                    <p class="school-item-description">澳大利亚的中学教育享誉全球，其中学教育由 州一级政府负责监管。澳洲中学分公立中学和 私立中学。新州初中教学始于7年级， 11年级
+                      和12年级的课程，大体相当于中国的高中，以 面向大学升学为主，学生可以自由选择专业课
+                      。在12年级结业后通过澳洲本地高考可进入澳 洲大学就读本科。</p>
+                    <p class="school-item-more-info">
+                      <span class="school-more-info pointer">了解更多 >></span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== 我们的团队 ====================== -->
+  <div class="section ourteam">
+    <div class="section-container">
+      <!--标题-->
+      <div class="section-title">
+        <p class="section-title-small-title three-chars our-team-small-title">我们的</p>
+        <img class="section-title-slash" src="/assets/images/divider.png" alt="">
+        <p class="section-title-large-title">
+          <b>團隊</b>
+        </p>
+      </div>
+      <!--内容-->
+      <div class="section-body">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-3 col-xs-6 team-item-container" *ngFor="let teacher of teachers">
+              <div class="team-item">
+                <img src="/assets/images/teacher.jpg" class="our-team-image">
+                <h4 class="team-title">{{teacher[0]}}</h4>
+                <h4 class="team-title">{{teacher[1]}}</h4>
+                <p class="team-tel">{{teacher[2]}}</p>
+                <p class="team-email">
+                  <span class="team-icon"> @ </span>{{teacher[3]}}</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

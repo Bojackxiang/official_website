@@ -1,0 +1,22 @@
+.m-slider {
+  overflow: hidden;
+  z-index: 9998;
+}
+.m-slider-img-ul {
+  position: relative;
+  height: 9.6rem;
+  overflow: hidden;
+  display: none;
+}
+.m-slider-img-ul div {
+  height: 100%;
+  float: left;
+}
+.m-slider-img-ul div a {
+  display: block;
+  height: 100%;
+  cursor: pointer;
+  background-size: auto 100%;
+  background-position: center bottom;
+  background-repeat: no-repeat no-repeat;
+}
